@@ -1,0 +1,66 @@
+GET http://localhost:4000/health
+
+###PERFECTLY_WORK###
+
+GET http://localhost:4000/api/v1/tickets
+
+###PERFECTLY_WORK###
+
+POST http://localhost:4000/api/v1/tickets
+Content-Type: application/json
+
+{
+    "username": "prithijit",
+    "price": 10
+}
+
+###PERFECTLY_WORK###
+
+POST http://localhost:4000/api/v1/tickets/bulk
+Content-Type: application/json
+
+{
+    "username": "Asis",
+    "price": 10,
+    "quantity": 5
+}
+
+###PERFECTLY_WORK###
+
+GET http://localhost:4000/api/v1/tickets/t/P37BC-wo_
+
+###PERFECTLY_WORK:SHOW_BY_USERNAME###
+
+GET http://localhost:4000/api/v1/tickets/u/Asis
+
+
+###PERFECTLY_WORK:DELETE_BY_ID###
+
+DELETE http://localhost:4000/api/v1/tickets/t/xayklJWNm
+
+#############################################################################
+DELETE http://localhost:4000/api/v1/tickets/u/Asis
+
+###PERFECTLY_WORK###
+PUT http://localhost:4000/api/v1/tickets/t/QRYBNeR9pa
+Content-Type: application/json
+
+{
+    "username": "Kumar",
+    "price": "50"
+}
+
+
+#############################################################################
+PUT http://localhost:4000/api/v1/tickets/u/Ashis
+Content-Type: application/json
+
+{
+    "username": "DEV",
+    "price": 50
+}
+
+
+###PERFECTLY_WORK###
+
+GET http://localhost:4000/api/v1/tickets/draw?wc=1
