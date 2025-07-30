@@ -105,7 +105,7 @@ class TicketCollection {
 
       ticket.price = ticketBody.price ?? ticket.price;
     }
-    writeFile(this[tickets]);
+    // writeFile(this[tickets]);
     // console.log("Updated ticket:", ticket);
     return ticket || null;
   }
@@ -127,7 +127,7 @@ class TicketCollection {
       (ticket) => this.updateByTicketId(ticket.id, ticketBody)
     );
     writeFile(this[tickets]);
-    console.log("Updated Bulk Tickets:", updatedBulkTickets);
+    // console.log("Updated Bulk Tickets:", updatedBulkTickets);
     return updatedBulkTickets;
   }
 
@@ -169,9 +169,9 @@ class TicketCollection {
        */
       (ticket) => this.deleteByTicketId(ticket.id)
     );
-    console.log("Deleted tickets:", deletedTickets);
+    // console.log("Deleted tickets:", deletedTickets);
     writeFile(this[tickets]);
-    console.log(`Deleted tickets for username: ${username}`);
+    // console.log(`Deleted tickets for username: ${username}`);
     return deletedTickets;
   }
 

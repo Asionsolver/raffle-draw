@@ -11,6 +11,6 @@ exports.readFile = async () => {
 
 exports.writeFile = async (data) => {
   const jsonData = JSON.stringify(data, null, 2);
-  console.log("Writing data to file:", jsonData);
+  // console.log("Writing data to file:", jsonData);
   await fs.writeFile(dbPath, jsonData);
 };

@@ -31,18 +31,18 @@ GET http://localhost:4000/api/v1/tickets/t/P37BC-wo_
 
 ###PERFECTLY_WORK:SHOW_BY_USERNAME###
 
-GET http://localhost:4000/api/v1/tickets/u/Asis
+GET http://localhost:4000/api/v1/tickets/u/DEV
 
 
 ###PERFECTLY_WORK:DELETE_BY_ID###
 
-DELETE http://localhost:4000/api/v1/tickets/t/xayklJWNm
+DELETE http://localhost:4000/api/v1/tickets/t/k-QwS_So28
 
 #############################################################################
 DELETE http://localhost:4000/api/v1/tickets/u/Asis
 
 ###PERFECTLY_WORK###
-PUT http://localhost:4000/api/v1/tickets/t/QRYBNeR9pa
+PUT http://localhost:4000/api/v1/tickets/t/k-QwS_So28
 Content-Type: application/json
 
 {
@@ -51,12 +51,12 @@ Content-Type: application/json
 }
 
 
-#############################################################################
-PUT http://localhost:4000/api/v1/tickets/u/Ashis
+###PERFECTLY_WORK###
+PUT http://localhost:4000/api/v1/tickets/u/Asis
 Content-Type: application/json
 
 {
-    "username": "DEV",
+    "username": "Ashis Kumar",
     "price": 50
 }
 

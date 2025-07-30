@@ -102,9 +102,9 @@ exports.updateTicketById = async (req, res) => {
 exports.updateTicketsByUsername = async (req, res) => {
   const { username } = req.params;
   const tickets = TicketCollection.updateBulkTicket(username, req.body);
-  console.log("Updated tickets:", tickets);
+  // console.log("Updated tickets:", tickets);
   const total = tickets.length;
-  console.log("Total updated tickets:", total);
+  // console.log("Total updated tickets:", total);
 
   if (!tickets) {
     return res.status(404).json({
