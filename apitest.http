@@ -20,7 +20,7 @@ POST http://localhost:4000/api/v1/tickets/bulk
 Content-Type: application/json
 
 {
-    "username": "Asis",
+    "username": "DEV",
     "price": 10,
     "quantity": 5
 }
@@ -36,17 +36,17 @@ GET http://localhost:4000/api/v1/tickets/u/DEV
 
 ###PERFECTLY_WORK:DELETE_BY_ID###
 
-DELETE http://localhost:4000/api/v1/tickets/t/k-QwS_So28
+DELETE http://localhost:4000/api/v1/tickets/t/MpZvJJ77S
 
 #############################################################################
-DELETE http://localhost:4000/api/v1/tickets/u/Asis
+DELETE http://localhost:4000/api/v1/tickets/u/DEV
 
 ###PERFECTLY_WORK###
-PUT http://localhost:4000/api/v1/tickets/t/k-QwS_So28
+PUT http://localhost:4000/api/v1/tickets/t/7pbA-eQLkq
 Content-Type: application/json
 
 {
-    "username": "Kumar",
+    "username": "Joy",
     "price": "50"
 }
 

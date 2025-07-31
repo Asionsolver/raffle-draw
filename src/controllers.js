@@ -1,4 +1,5 @@
 const TicketCollection = require("./tickets");
+const { writeFile } = require("./utils");
 
 // ticket selling controllers
 
@@ -34,7 +35,7 @@ exports.sellMultipleTickets = async (req, res) => {
 
 exports.findAllTickets = async (req, res) => {
   const tickets = TicketCollection.find();
-  console.log("Tickets found:", tickets);
+  // console.log("Tickets found:", tickets);
   const total = tickets.length;
   res.status(200).json({
     message: total === 0 ? "No tickets found" : "Tickets found 🎫",
@@ -91,7 +92,7 @@ exports.updateTicketById = async (req, res) => {
       error: "Ticket not found",
     });
   }
-
+  await writeFile(TicketCollection.find());
   res.status(200).json({
     message: "Ticket updated successfully 🎫",
     data: ticket,
@@ -133,7 +134,7 @@ exports.deleteTicketById = async (req, res) => {
       error: "Delete operation failed ❌",
     });
   }
-
+  await writeFile(TicketCollection.find()); // Ensure the file is updated after deletion
   res.status(204).json({
     message: "Ticket deleted successfully 🎫",
   });

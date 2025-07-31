@@ -147,7 +147,7 @@ class TicketCollection {
 
     if (index !== -1) {
       this[tickets].splice(index, 1);
-      writeFile(this[tickets]);
+      // writeFile(this[tickets]);
       return true;
     } else {
       return false;

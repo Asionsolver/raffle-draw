@@ -1,40 +1,5 @@
 [
   {
-    "id": "rp3-sd4qV",
-    "username": "DEV",
-    "price": 50,
-    "createdAt": "2025-07-30T20:21:28.839Z",
-    "updatedAt": "2025-07-30T20:21:28.839Z"
-  },
-  {
-    "id": "Uvoi7o_xM",
-    "username": "DEV",
-    "price": 50,
-    "createdAt": "2025-07-30T20:21:29.099Z",
-    "updatedAt": "2025-07-30T20:21:29.099Z"
-  },
-  {
-    "id": "gv_W1mDtH",
-    "username": "DEV",
-    "price": 50,
-    "createdAt": "2025-07-30T20:21:29.334Z",
-    "updatedAt": "2025-07-30T20:21:29.334Z"
-  },
-  {
-    "id": "4I4BVuO0Gp",
-    "username": "DEV",
-    "price": 50,
-    "createdAt": "2025-07-30T20:21:29.690Z",
-    "updatedAt": "2025-07-30T20:21:29.690Z"
-  },
-  {
-    "id": "z3_mPWUtz",
-    "username": "DEV",
-    "price": 50,
-    "createdAt": "2025-07-30T20:21:29.886Z",
-    "updatedAt": "2025-07-30T20:21:29.886Z"
-  },
-  {
     "id": "AEVrXtjJC",
     "username": "Ashis",
     "price": 50,
@@ -78,8 +43,8 @@
   },
   {
     "id": "7pbA-eQLkq",
-    "username": "Ashis Kumar",
-    "price": 50,
+    "username": "Joy",
+    "price": "50",
     "createdAt": "2025-07-30T20:38:38.143Z",
     "updatedAt": "2025-07-30T20:38:38.143Z"
   },
@@ -92,8 +57,8 @@
   },
   {
     "id": "G4aKM4c9fJ",
-    "username": "Ashis Kumar",
-    "price": 50,
+    "username": "Kumar",
+    "price": "50",
     "createdAt": "2025-07-30T20:38:38.144Z",
     "updatedAt": "2025-07-30T20:38:38.144Z"
   }
